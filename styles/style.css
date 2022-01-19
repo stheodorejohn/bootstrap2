@@ -452,7 +452,7 @@ h1, h2, h3, h4, h5, h6 {
 .product-grid {
     width: 100%;
     margin-top: 57px;
-    
+
 }
 
 .product-item {
@@ -594,17 +594,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product_bubble_green {
-   background: #51a042;
+    background: #51a042;
 }
 
 
 
-.product_bubble_left{
+.product_bubble_left {
     left: 15px;
 }
 
 
-.product_bubble_right{
+.product_bubble_right {
     right: 15px;
 }
 
@@ -615,17 +615,17 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
 }
 
-.add_to_cart_button a{
+.add_to_cart_button a {
     font-size: 12px;
     font-weight: 600;
 }
 
-.product-item:hover .add_to_cart_button{
-visibility: visible;
-opacity: 1;
+.product-item:hover .add_to_cart_button {
+    visibility: visible;
+    opacity: 1;
 }
 
-.favourite{
+.favorite {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -636,33 +636,204 @@ opacity: 1;
     opacity: 0;
 }
 
- .favourite_left{
-     left: 15px;
- }
+.favorite_left {
+    left: 15px;
+}
 
-.favourite.active{
+.favorite.active {
     visibility: visible;
     opacity: 1;
 }
 
-.product-item:hover .favourite{
+.product-item:hover .favorite {
     visibility: visible;
     opacity: 1;
 }
 
-.favourite.active::after{
-    font-family: 'FontAwesome' ;
+.favorite.active::after {
+    font-family: 'FontAwesome';
     content: '\f004';
     color: #fe4c50;
 }
-.favourite::after{
+
+.favorite::after {
     font-family: 'FontAwesome';
     content: '\f08a';
 }
 
-.favourite:hover::after{
+.favorite:hover::after {
     color: #fe4c50;
 }
+
+
+/* 6. Deal of the Week*/
+
+.deal_ofthe_week {
+    width: 100%;
+    margin-top: 41px;
+    background: #f2f2f2;
+}
+
+.deal_ofthe_week_img {
+    height: 540px;
+
+}
+
+.deal_ofthe_week_img img {
+    height: 100%;
+}
+
+.deal_ofthe_week_content {
+    height: 100%;
+}
+
+.section_title {
+    display: inline-block;
+    text-align: center;
+}
+
+.section_title h2 {
+    display: inline-block;
+}
+
+.section_title::after {
+    display: block;
+    position: absolute;
+    top: calc(100% + 13px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background: #fe4c50;
+    content: '';
+
+}
+
+.timer {
+    margin-top: 66px;
+
+}
+
+.timer li {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-right: 10px;
+}
+
+.timer li:last-child {
+    margin-right: 0px;
+}
+
+.timer_num {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fe4c50;
+    margin-top: 10px;
+}
+
+.timer_unit {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #51545f;
+}
+
+.deal_ofthe_week_button {
+    width: 140px;
+    background: #1e1e27;
+    margin-top: 52px;
+
+}
+
+
+
+.deal_ofthe_week_button:hover {
+    background: #2b2b34 !important;
+
+}
+
+
+/* 7. Best sellers */
+
+.product_slider_container {
+    width: 100%;
+    height: 340px;
+    margin-top: 73px;
+
+}
+
+.product_slider_container::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #ffffff;
+    content: '';
+    z-index: 1;
+}
+
+.product_slider {
+    overflow: visible !important;
+}
+
+.product_slider_item.product-item {
+    height: 340;
+}
+
+.product_slider_item {
+    width: 20%;
+}
+
+.product_slider_item .product-item {
+
+    width: 100% !important;
+}
+
+
+/* 7.1 Slider Nav*/
+
+.product_slider_nav {
+    position: absolute;
+    width: 30px;
+    height: 70px;
+    background: #d3d3d6;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.product_slider_container:hover .product_slider_nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+.product_slider_nav i {
+    color: #ffffff;
+    font-size: 12px;
+
+}
+
+.product_slider_nav_left {
+    top: 50%;
+    left: 0;
+
+}
+
+.product_slider_nav_right {
+    top: 50%;
+    right: 0;
+
+}
+
+
 
 
 
